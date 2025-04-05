@@ -11,8 +11,9 @@ const darkColorsArr = [
     "#800020",
   ];
   
+  
   function getRandomIndex() {
-    const randomIndex = Math.floor(darkColorsArr.length * Math.random());
+    const randomIndex = Math.floor(darkColorsArr.length * Math.random()); //randomIndex = Math.floor(10 * Math.random()) randomIndex = random number from 0 - 9
     return randomIndex;
   }
   
@@ -20,9 +21,9 @@ const darkColorsArr = [
   const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
   
   function changeBackgroundColor() {
-    const color = darkColorsArr[getRandomIndex()];
+    const color = darkColorsArr[getRandomIndex()]; // color = darkColorsArr[random number from 0 - 9]
   
-    bgHexCodeSpanElement.innerText = color;
+    bgHexCodeSpanElement.innerText = color; 
     body.style.backgroundColor = color;
   }
   const btn = document.querySelector("#btn");
